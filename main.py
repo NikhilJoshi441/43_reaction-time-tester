@@ -30,6 +30,8 @@ def main():
 
         pygame.display.flip()
         clock.tick(FPS)
+        if engine.exit_requested:
+            running = False
 
     pygame.quit()
 
